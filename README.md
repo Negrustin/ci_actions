@@ -21,7 +21,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest   # образ для сборки
 
     steps:
     - uses: actions/checkout@v3
@@ -42,6 +42,11 @@ jobs:
     - name: Build witch Gradle
       run: ./gradlew test --info
 ```
+
+Часть `-jar app-mbank.jar` может меняться, но первая часть для вас во всех ДЗ при запуске на вашем ПК будет именно такой.
+
+Для запуска тестов в  режиме headless используйте: `-Dselenide.headless=true`
+
 5. Сохраните изменения.
 
 ![](images/startCommit.png)
