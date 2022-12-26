@@ -44,5 +44,7 @@ jobs:
       run: ./gradlew test --info
 ```
 5. Сохраните изменения.
+![](/images/startCommit.png)
+
       
 
